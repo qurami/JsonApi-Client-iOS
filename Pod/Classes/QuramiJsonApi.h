@@ -1,0 +1,10 @@
+#import "QJADocument.h"
+#import "QJAResource.h"
+#import "QJAResourceFormatter.h"
+#import "QJAModelHelper.h"
+#import "QJAError.h"
+#import "QJAClient.h"
+#import "QJAJsonEncoder.h"
+
+#import "QJAClient+JSONPatchExtension.h"
+#import "QJAJSONPatchDocument.h"

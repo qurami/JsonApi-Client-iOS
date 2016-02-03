@@ -1,0 +1,6 @@
+framework module QuramiJsonApi {
+  umbrella header "QuramiJsonApi-umbrella.h"
+
+  export *
+  module * { export * }
+}

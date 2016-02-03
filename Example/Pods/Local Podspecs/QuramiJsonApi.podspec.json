@@ -1,0 +1,25 @@
+{
+  "name": "QuramiJsonApi",
+  "version": "0.1.0",
+  "summary": "A short description of QuramiJsonApi.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/QuramiJsonApi",
+  "license": "MIT",
+  "authors": {
+    "Marco Musella": "mar.musella@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/QuramiJsonApi.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "QuramiJsonApi": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

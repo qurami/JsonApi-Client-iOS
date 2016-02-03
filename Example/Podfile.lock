@@ -1,0 +1,14 @@
+PODS:
+  - QuramiJsonApi (0.1.0)
+
+DEPENDENCIES:
+  - QuramiJsonApi (from `../`)
+
+EXTERNAL SOURCES:
+  QuramiJsonApi:
+    :path: ../
+
+SPEC CHECKSUMS:
+  QuramiJsonApi: 4bf9cb9ea7bd7ab86c6b02031aab8a6df70eba2e
+
+COCOAPODS: 0.39.0
