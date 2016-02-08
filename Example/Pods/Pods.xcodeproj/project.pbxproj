@@ -7,32 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45A8B96A1C628BF900E88B91 /* QJAClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A8B9571C628BF900E88B91 /* QJAClient.h */; };
-		45A8B96B1C628BF900E88B91 /* QJAClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A8B9581C628BF900E88B91 /* QJAClient.m */; };
-		45A8B96C1C628BF900E88B91 /* QJAClient+JSONPatchExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A8B9591C628BF900E88B91 /* QJAClient+JSONPatchExtension.h */; };
-		45A8B96D1C628BF900E88B91 /* QJAClient+JSONPatchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A8B95A1C628BF900E88B91 /* QJAClient+JSONPatchExtension.m */; };
-		45A8B96E1C628BF900E88B91 /* QJADocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A8B95B1C628BF900E88B91 /* QJADocument.h */; };
-		45A8B96F1C628BF900E88B91 /* QJADocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A8B95C1C628BF900E88B91 /* QJADocument.m */; };
-		45A8B9701C628BF900E88B91 /* QJAError.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A8B95D1C628BF900E88B91 /* QJAError.h */; };
-		45A8B9711C628BF900E88B91 /* QJAError.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A8B95E1C628BF900E88B91 /* QJAError.m */; };
-		45A8B9721C628BF900E88B91 /* QJAJsonEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A8B95F1C628BF900E88B91 /* QJAJsonEncoder.h */; };
-		45A8B9731C628BF900E88B91 /* QJAJsonEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A8B9601C628BF900E88B91 /* QJAJsonEncoder.m */; };
-		45A8B9741C628BF900E88B91 /* QJAJsonPatchDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A8B9611C628BF900E88B91 /* QJAJsonPatchDocument.h */; };
-		45A8B9751C628BF900E88B91 /* QJAJsonPatchDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A8B9621C628BF900E88B91 /* QJAJsonPatchDocument.m */; };
-		45A8B9761C628BF900E88B91 /* QJAModelHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A8B9631C628BF900E88B91 /* QJAModelHelper.h */; };
-		45A8B9771C628BF900E88B91 /* QJAModelHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A8B9641C628BF900E88B91 /* QJAModelHelper.m */; };
-		45A8B9781C628BF900E88B91 /* QJAResource.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A8B9651C628BF900E88B91 /* QJAResource.h */; };
-		45A8B9791C628BF900E88B91 /* QJAResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A8B9661C628BF900E88B91 /* QJAResource.m */; };
-		45A8B97A1C628BF900E88B91 /* QJAResourceFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A8B9671C628BF900E88B91 /* QJAResourceFormatter.h */; };
-		45A8B97B1C628BF900E88B91 /* QJAResourceFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A8B9681C628BF900E88B91 /* QJAResourceFormatter.m */; };
-		45A8B97C1C628BF900E88B91 /* QuramiJsonApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A8B9691C628BF900E88B91 /* QuramiJsonApi.h */; };
+		04203EC2D732EA56C1344C9C279E222D /* QJAResource.h in Headers */ = {isa = PBXBuildFile; fileRef = F6BE8D9607F2F2019629336836645885 /* QJAResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F07018F64433314D766414C76356D99 /* QJAJsonEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = A90A9527A5D9975010C33CA1CE008E07 /* QJAJsonEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		369B07E3653F647A47A040BAEA8897FB /* QJAClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 907498EFB6702AD3AC2C7209464FE8D3 /* QJAClient.m */; };
+		3A260F502D48AD0113C5CDA79A2E592F /* QJAError.h in Headers */ = {isa = PBXBuildFile; fileRef = FD343E612D75377B1C1405770D29146A /* QJAError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45C1629D295ECE4D6E3C9DFEF512A798 /* QJAJsonPatchDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 581A1486BCEBDE01C1653A99CB6D6324 /* QJAJsonPatchDocument.m */; };
+		4F046D39BE0C7CBE4A1D490C13B6BAD2 /* QuramiJsonApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B343EBD54CEC0B32A205437373884B0 /* QuramiJsonApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		593F9ED32EE02A65F370632F096B2EED /* QJAClient+JSONPatchExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = BEE5E2108FDEF865D72B5C3248AAAF23 /* QJAClient+JSONPatchExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		625853DE04327AB52061DCEEFE1A1036 /* QJAResource.m in Sources */ = {isa = PBXBuildFile; fileRef = A69CC814F87C95D79B6E03E2D2E0A550 /* QJAResource.m */; };
+		77D83EA0EFA298661F0EC854F14DFC63 /* QJADocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 92BEB1F945713B8799BE71970333933B /* QJADocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7ED0D9CF95DA446FDAC9129797647EC0 /* Pods-QuramiJsonApi_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D828C8A987CEE0F093A366095D12692 /* Pods-QuramiJsonApi_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2B8BA203507620DD396B2B0E40F2F95 /* QuramiJsonApi-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F676947DA0B468C3D5DE1FDDBBE7C32E /* QuramiJsonApi-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		882D2F27C7939BCBC79F4206FD344287 /* QuramiJsonApi-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F676947DA0B468C3D5DE1FDDBBE7C32E /* QuramiJsonApi-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A67EB2631442E537D8E54346A5B65455 /* QJAResourceFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = F76E047BB4476913528E7A1A21F80B5C /* QJAResourceFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACD8775D2F6A286DE1735429FAE0D6B0 /* QJAModelHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BD81603DD361758AAA206E7EDFBAE6 /* QJAModelHelper.m */; };
+		B07F405129A43B30657EB3367D410DF4 /* QJAResourceFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B9B0857F7169EAF285828205727FCE /* QJAResourceFormatter.m */; };
+		BBC53AB5F10A95C4DE1D7E18FD25DD28 /* QuramiJsonApi-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A824A057B49CFD57562AF6653B45AA5 /* QuramiJsonApi-dummy.m */; };
 		BC622943AE141CE7F2C9CF74998C23EB /* Pods-QuramiJsonApi_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2914282D1C3E4AE283AFD3E749AA49D6 /* Pods-QuramiJsonApi_Tests-dummy.m */; };
-		C13E1ECFB9F438DF3EC4FF57208F92D6 /* QuramiJsonApi-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A824A057B49CFD57562AF6653B45AA5 /* QuramiJsonApi-dummy.m */; };
+		D045C4996DE86F4168A3C7970966C9AC /* QJAJsonPatchDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 140835AF16222BAA3661CE70E3AE1F47 /* QJAJsonPatchDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3321BF64E8652A6ADD906A8937F4B2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		D48F3EAAE829F0E7D45A3AEDDCFB4B0E /* QJAModelHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = A4B8473058724C80534EAC2B6CA8AA90 /* QJAModelHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D783D556DA011C3C7EF2DF576A970B83 /* QJAError.m in Sources */ = {isa = PBXBuildFile; fileRef = 173413AB86EF5E6397BB394AC3D089EA /* QJAError.m */; };
+		E08FD5C8B9FDA650E10CEA59F5FACCF4 /* QJAJsonEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F09A3EF4F52ED9AFC43F28BA4E1534DF /* QJAJsonEncoder.m */; };
+		E5061C9BDD124E0A4F0A95E0ACE3BE8B /* QJADocument.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F92FFA4D2A44CF2EF449898A1D7236 /* QJADocument.m */; };
+		E6257E436C880086F3148D3C4C32E039 /* QJAClient+JSONPatchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD656B142884CFB9185BB4927F9F99 /* QJAClient+JSONPatchExtension.m */; };
 		ED7EB76B920A80C86C096A2BA0FDF502 /* QuramiJsonApi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 458397FC1F29092F423DEAD05EF142F7 /* QuramiJsonApi.bundle */; };
 		F0F90F239E190317B0DC31D2BFA4AF2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		F4A2FBAF457C8F8F398AFA59979FAFD1 /* QJAClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C42C0350DF23AD8305922A4A3C40A69 /* QJAClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09BD656B142884CFB9185BB4927F9F99 /* QJAClient+JSONPatchExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QJAClient+JSONPatchExtension.m"; sourceTree = "<group>"; };
+		0C42C0350DF23AD8305922A4A3C40A69 /* QJAClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QJAClient.h; sourceTree = "<group>"; };
+		140835AF16222BAA3661CE70E3AE1F47 /* QJAJsonPatchDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QJAJsonPatchDocument.h; sourceTree = "<group>"; };
+		173413AB86EF5E6397BB394AC3D089EA /* QJAError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QJAError.m; sourceTree = "<group>"; };
 		18C60CCF35B74F2507143F66846FAB28 /* Pods-QuramiJsonApi_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QuramiJsonApi_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2914282D1C3E4AE283AFD3E749AA49D6 /* Pods-QuramiJsonApi_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QuramiJsonApi_Tests-dummy.m"; sourceTree = "<group>"; };
 		29E721DD3E218A743CBC722F79CB0BB7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,39 +64,35 @@
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		442F7F07C3680191D490E96B5A64240F /* Pods-QuramiJsonApi_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QuramiJsonApi_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		458397FC1F29092F423DEAD05EF142F7 /* QuramiJsonApi.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuramiJsonApi.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		45A8B9571C628BF900E88B91 /* QJAClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJAClient.h; sourceTree = "<group>"; };
-		45A8B9581C628BF900E88B91 /* QJAClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJAClient.m; sourceTree = "<group>"; };
-		45A8B9591C628BF900E88B91 /* QJAClient+JSONPatchExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QJAClient+JSONPatchExtension.h"; sourceTree = "<group>"; };
-		45A8B95A1C628BF900E88B91 /* QJAClient+JSONPatchExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QJAClient+JSONPatchExtension.m"; sourceTree = "<group>"; };
-		45A8B95B1C628BF900E88B91 /* QJADocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJADocument.h; sourceTree = "<group>"; };
-		45A8B95C1C628BF900E88B91 /* QJADocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJADocument.m; sourceTree = "<group>"; };
-		45A8B95D1C628BF900E88B91 /* QJAError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJAError.h; sourceTree = "<group>"; };
-		45A8B95E1C628BF900E88B91 /* QJAError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJAError.m; sourceTree = "<group>"; };
-		45A8B95F1C628BF900E88B91 /* QJAJsonEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJAJsonEncoder.h; sourceTree = "<group>"; };
-		45A8B9601C628BF900E88B91 /* QJAJsonEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJAJsonEncoder.m; sourceTree = "<group>"; };
-		45A8B9611C628BF900E88B91 /* QJAJsonPatchDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJAJsonPatchDocument.h; sourceTree = "<group>"; };
-		45A8B9621C628BF900E88B91 /* QJAJsonPatchDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJAJsonPatchDocument.m; sourceTree = "<group>"; };
-		45A8B9631C628BF900E88B91 /* QJAModelHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJAModelHelper.h; sourceTree = "<group>"; };
-		45A8B9641C628BF900E88B91 /* QJAModelHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJAModelHelper.m; sourceTree = "<group>"; };
-		45A8B9651C628BF900E88B91 /* QJAResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJAResource.h; sourceTree = "<group>"; };
-		45A8B9661C628BF900E88B91 /* QJAResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJAResource.m; sourceTree = "<group>"; };
-		45A8B9671C628BF900E88B91 /* QJAResourceFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJAResourceFormatter.h; sourceTree = "<group>"; };
-		45A8B9681C628BF900E88B91 /* QJAResourceFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJAResourceFormatter.m; sourceTree = "<group>"; };
-		45A8B9691C628BF900E88B91 /* QuramiJsonApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuramiJsonApi.h; sourceTree = "<group>"; };
 		4A824A057B49CFD57562AF6653B45AA5 /* QuramiJsonApi-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QuramiJsonApi-dummy.m"; sourceTree = "<group>"; };
+		581A1486BCEBDE01C1653A99CB6D6324 /* QJAJsonPatchDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QJAJsonPatchDocument.m; sourceTree = "<group>"; };
 		5D1E49FBCCC312ED18EDA63B4C6E085B /* Pods-QuramiJsonApi_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QuramiJsonApi_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		61768ECEA1ACD39BE8CAECEB5458BD5E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65FC512E79B439C6A4978E8603C83A4E /* QuramiJsonApi-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuramiJsonApi-prefix.pch"; sourceTree = "<group>"; };
 		66674881F157DC72E0D9169B264411AC /* Pods_QuramiJsonApi_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuramiJsonApi_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D828C8A987CEE0F093A366095D12692 /* Pods-QuramiJsonApi_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QuramiJsonApi_Tests-umbrella.h"; sourceTree = "<group>"; };
 		87F8759D8A1077A87810E292952D6140 /* Pods-QuramiJsonApi_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuramiJsonApi_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		907498EFB6702AD3AC2C7209464FE8D3 /* QJAClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QJAClient.m; sourceTree = "<group>"; };
+		92BEB1F945713B8799BE71970333933B /* QJADocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QJADocument.h; sourceTree = "<group>"; };
 		95952E95994DBDE310B3926693111EED /* QuramiJsonApi.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = QuramiJsonApi.modulemap; sourceTree = "<group>"; };
+		9B343EBD54CEC0B32A205437373884B0 /* QuramiJsonApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QuramiJsonApi.h; sourceTree = "<group>"; };
+		A4B8473058724C80534EAC2B6CA8AA90 /* QJAModelHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QJAModelHelper.h; sourceTree = "<group>"; };
+		A69CC814F87C95D79B6E03E2D2E0A550 /* QJAResource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QJAResource.m; sourceTree = "<group>"; };
+		A90A9527A5D9975010C33CA1CE008E07 /* QJAJsonEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QJAJsonEncoder.h; sourceTree = "<group>"; };
+		B4BD81603DD361758AAA206E7EDFBAE6 /* QJAModelHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QJAModelHelper.m; sourceTree = "<group>"; };
+		B6B9B0857F7169EAF285828205727FCE /* QJAResourceFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QJAResourceFormatter.m; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BEE5E2108FDEF865D72B5C3248AAAF23 /* QJAClient+JSONPatchExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QJAClient+JSONPatchExtension.h"; sourceTree = "<group>"; };
+		C0F92FFA4D2A44CF2EF449898A1D7236 /* QJADocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QJADocument.m; sourceTree = "<group>"; };
 		CA52DB7CD1CBDC2625AF9F671CF505F3 /* Pods-QuramiJsonApi_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QuramiJsonApi_Tests-resources.sh"; sourceTree = "<group>"; };
 		D4A3742FBB61CFAE44CA9CE1BF2CD236 /* Pods-QuramiJsonApi_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QuramiJsonApi_Tests.modulemap"; sourceTree = "<group>"; };
+		F09A3EF4F52ED9AFC43F28BA4E1534DF /* QJAJsonEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = QJAJsonEncoder.m; sourceTree = "<group>"; };
 		F59916376C107B80C11FE65B0E2D7238 /* QuramiJsonApi.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QuramiJsonApi.xcconfig; sourceTree = "<group>"; };
 		F676947DA0B468C3D5DE1FDDBBE7C32E /* QuramiJsonApi-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QuramiJsonApi-umbrella.h"; sourceTree = "<group>"; };
+		F6BE8D9607F2F2019629336836645885 /* QJAResource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QJAResource.h; sourceTree = "<group>"; };
 		F73274A1665BCE3A1D3D46F695E23D61 /* QuramiJsonApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuramiJsonApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76E047BB4476913528E7A1A21F80B5C /* QJAResourceFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QJAResourceFormatter.h; sourceTree = "<group>"; };
+		FD343E612D75377B1C1405770D29146A /* QJAError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = QJAError.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +122,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E08862A63BBB25A87EB09AB94BFA5BF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0C42C0350DF23AD8305922A4A3C40A69 /* QJAClient.h */,
+				907498EFB6702AD3AC2C7209464FE8D3 /* QJAClient.m */,
+				BEE5E2108FDEF865D72B5C3248AAAF23 /* QJAClient+JSONPatchExtension.h */,
+				09BD656B142884CFB9185BB4927F9F99 /* QJAClient+JSONPatchExtension.m */,
+				92BEB1F945713B8799BE71970333933B /* QJADocument.h */,
+				C0F92FFA4D2A44CF2EF449898A1D7236 /* QJADocument.m */,
+				FD343E612D75377B1C1405770D29146A /* QJAError.h */,
+				173413AB86EF5E6397BB394AC3D089EA /* QJAError.m */,
+				A90A9527A5D9975010C33CA1CE008E07 /* QJAJsonEncoder.h */,
+				F09A3EF4F52ED9AFC43F28BA4E1534DF /* QJAJsonEncoder.m */,
+				140835AF16222BAA3661CE70E3AE1F47 /* QJAJsonPatchDocument.h */,
+				581A1486BCEBDE01C1653A99CB6D6324 /* QJAJsonPatchDocument.m */,
+				A4B8473058724C80534EAC2B6CA8AA90 /* QJAModelHelper.h */,
+				B4BD81603DD361758AAA206E7EDFBAE6 /* QJAModelHelper.m */,
+				F6BE8D9607F2F2019629336836645885 /* QJAResource.h */,
+				A69CC814F87C95D79B6E03E2D2E0A550 /* QJAResource.m */,
+				F76E047BB4476913528E7A1A21F80B5C /* QJAResourceFormatter.h */,
+				B6B9B0857F7169EAF285828205727FCE /* QJAResourceFormatter.m */,
+				9B343EBD54CEC0B32A205437373884B0 /* QuramiJsonApi.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		78A0C1CA8A50190B7D73A41C720B9B07 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,18 +169,10 @@
 			);
 			sourceTree = "<group>";
 		};
-		82BEDDBFE1BC3751986ECD3EB597073B /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				A5256AF54C46417D0CD118E2976DBF58 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
 		831FF5F8FCDC836702F83FDB5C505F98 /* QuramiJsonApi */ = {
 			isa = PBXGroup;
 			children = (
-				82BEDDBFE1BC3751986ECD3EB597073B /* Pod */,
+				CECE5D5F984C63ED0AA960D8F2C11FB2 /* Pod */,
 				CDA117CCA4B4BB48E65028F9297BB6C8 /* Support Files */,
 			);
 			name = QuramiJsonApi;
@@ -185,32 +203,6 @@
 			);
 			name = "Pods-QuramiJsonApi_Tests";
 			path = "Target Support Files/Pods-QuramiJsonApi_Tests";
-			sourceTree = "<group>";
-		};
-		A5256AF54C46417D0CD118E2976DBF58 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				45A8B9571C628BF900E88B91 /* QJAClient.h */,
-				45A8B9581C628BF900E88B91 /* QJAClient.m */,
-				45A8B9591C628BF900E88B91 /* QJAClient+JSONPatchExtension.h */,
-				45A8B95A1C628BF900E88B91 /* QJAClient+JSONPatchExtension.m */,
-				45A8B95B1C628BF900E88B91 /* QJADocument.h */,
-				45A8B95C1C628BF900E88B91 /* QJADocument.m */,
-				45A8B95D1C628BF900E88B91 /* QJAError.h */,
-				45A8B95E1C628BF900E88B91 /* QJAError.m */,
-				45A8B95F1C628BF900E88B91 /* QJAJsonEncoder.h */,
-				45A8B9601C628BF900E88B91 /* QJAJsonEncoder.m */,
-				45A8B9611C628BF900E88B91 /* QJAJsonPatchDocument.h */,
-				45A8B9621C628BF900E88B91 /* QJAJsonPatchDocument.m */,
-				45A8B9631C628BF900E88B91 /* QJAModelHelper.h */,
-				45A8B9641C628BF900E88B91 /* QJAModelHelper.m */,
-				45A8B9651C628BF900E88B91 /* QJAResource.h */,
-				45A8B9661C628BF900E88B91 /* QJAResource.m */,
-				45A8B9671C628BF900E88B91 /* QJAResourceFormatter.h */,
-				45A8B9681C628BF900E88B91 /* QJAResourceFormatter.m */,
-				45A8B9691C628BF900E88B91 /* QuramiJsonApi.h */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -251,32 +243,40 @@
 			path = "Example/Pods/Target Support Files/QuramiJsonApi";
 			sourceTree = "<group>";
 		};
+		CECE5D5F984C63ED0AA960D8F2C11FB2 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				2E08862A63BBB25A87EB09AB94BFA5BF /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5E04EBC450CE7BEAB0859B1C12525CDB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B2B8BA203507620DD396B2B0E40F2F95 /* QuramiJsonApi-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EA2E8BE4D4123CBE93C35C966328C941 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45A8B96C1C628BF900E88B91 /* QJAClient+JSONPatchExtension.h in Headers */,
-				45A8B96A1C628BF900E88B91 /* QJAClient.h in Headers */,
-				45A8B97A1C628BF900E88B91 /* QJAResourceFormatter.h in Headers */,
-				45A8B97C1C628BF900E88B91 /* QuramiJsonApi.h in Headers */,
-				45A8B9721C628BF900E88B91 /* QJAJsonEncoder.h in Headers */,
-				45A8B9761C628BF900E88B91 /* QJAModelHelper.h in Headers */,
-				45A8B9781C628BF900E88B91 /* QJAResource.h in Headers */,
-				45A8B9701C628BF900E88B91 /* QJAError.h in Headers */,
-				45A8B96E1C628BF900E88B91 /* QJADocument.h in Headers */,
-				45A8B9741C628BF900E88B91 /* QJAJsonPatchDocument.h in Headers */,
 				7ED0D9CF95DA446FDAC9129797647EC0 /* Pods-QuramiJsonApi_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F10E69DA5553477BF94322E7B6D234C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				593F9ED32EE02A65F370632F096B2EED /* QJAClient+JSONPatchExtension.h in Headers */,
+				F4A2FBAF457C8F8F398AFA59979FAFD1 /* QJAClient.h in Headers */,
+				77D83EA0EFA298661F0EC854F14DFC63 /* QJADocument.h in Headers */,
+				3A260F502D48AD0113C5CDA79A2E592F /* QJAError.h in Headers */,
+				2F07018F64433314D766414C76356D99 /* QJAJsonEncoder.h in Headers */,
+				D045C4996DE86F4168A3C7970966C9AC /* QJAJsonPatchDocument.h in Headers */,
+				D48F3EAAE829F0E7D45A3AEDDCFB4B0E /* QJAModelHelper.h in Headers */,
+				04203EC2D732EA56C1344C9C279E222D /* QJAResource.h in Headers */,
+				A67EB2631442E537D8E54346A5B65455 /* QJAResourceFormatter.h in Headers */,
+				882D2F27C7939BCBC79F4206FD344287 /* QuramiJsonApi-umbrella.h in Headers */,
+				4F046D39BE0C7CBE4A1D490C13B6BAD2 /* QuramiJsonApi.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,10 +304,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCB4D3999AC34860BDE2B4B17CCDE263 /* Build configuration list for PBXNativeTarget "QuramiJsonApi" */;
 			buildPhases = (
-				26AAE0E65CF9012EBCF973447F961E47 /* Sources */,
+				9C82A0BAF8A3C0EF173A1E62665322BA /* Sources */,
 				2C1C50A60FAF18520EA38C7E5C5FED97 /* Frameworks */,
 				FD44EB7AEFEAB321CFE6B3DB5F53CCBC /* Resources */,
-				5E04EBC450CE7BEAB0859B1C12525CDB /* Headers */,
+				F10E69DA5553477BF94322E7B6D234C6 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -384,11 +384,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		26AAE0E65CF9012EBCF973447F961E47 /* Sources */ = {
+		9C82A0BAF8A3C0EF173A1E62665322BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C13E1ECFB9F438DF3EC4FF57208F92D6 /* QuramiJsonApi-dummy.m in Sources */,
+				E6257E436C880086F3148D3C4C32E039 /* QJAClient+JSONPatchExtension.m in Sources */,
+				369B07E3653F647A47A040BAEA8897FB /* QJAClient.m in Sources */,
+				E5061C9BDD124E0A4F0A95E0ACE3BE8B /* QJADocument.m in Sources */,
+				D783D556DA011C3C7EF2DF576A970B83 /* QJAError.m in Sources */,
+				E08FD5C8B9FDA650E10CEA59F5FACCF4 /* QJAJsonEncoder.m in Sources */,
+				45C1629D295ECE4D6E3C9DFEF512A798 /* QJAJsonPatchDocument.m in Sources */,
+				ACD8775D2F6A286DE1735429FAE0D6B0 /* QJAModelHelper.m in Sources */,
+				625853DE04327AB52061DCEEFE1A1036 /* QJAResource.m in Sources */,
+				B07F405129A43B30657EB3367D410DF4 /* QJAResourceFormatter.m in Sources */,
+				BBC53AB5F10A95C4DE1D7E18FD25DD28 /* QuramiJsonApi-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,16 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45A8B9771C628BF900E88B91 /* QJAModelHelper.m in Sources */,
-				45A8B9791C628BF900E88B91 /* QJAResource.m in Sources */,
 				BC622943AE141CE7F2C9CF74998C23EB /* Pods-QuramiJsonApi_Tests-dummy.m in Sources */,
-				45A8B96D1C628BF900E88B91 /* QJAClient+JSONPatchExtension.m in Sources */,
-				45A8B9711C628BF900E88B91 /* QJAError.m in Sources */,
-				45A8B9731C628BF900E88B91 /* QJAJsonEncoder.m in Sources */,
-				45A8B96B1C628BF900E88B91 /* QJAClient.m in Sources */,
-				45A8B97B1C628BF900E88B91 /* QJAResourceFormatter.m in Sources */,
-				45A8B96F1C628BF900E88B91 /* QJADocument.m in Sources */,
-				45A8B9751C628BF900E88B91 /* QJAJsonPatchDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,41 +434,106 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
+		03126E33BDA5994F94CA16D5801147FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37690AF6A0CB2E932566F64E0CE346B8 /* Pods-QuramiJsonApi_Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QuramiJsonApi_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuramiJsonApi_Tests/Pods-QuramiJsonApi_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_QuramiJsonApi_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
+		2DD3DF8122F0290A33B6F8B49FCD6CE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F59916376C107B80C11FE65B0E2D7238 /* QuramiJsonApi.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = QuramiJsonApi;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		7168C06EA505DB6A8A6065240283B259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F59916376C107B80C11FE65B0E2D7238 /* QuramiJsonApi.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/QuramiJsonApi/QuramiJsonApi-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QuramiJsonApi/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QuramiJsonApi/QuramiJsonApi.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = QuramiJsonApi;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7BC610DAADF0D409F95C9EB18D67781E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18C60CCF35B74F2507143F66846FAB28 /* Pods-QuramiJsonApi_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QuramiJsonApi_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QuramiJsonApi_Tests/Pods-QuramiJsonApi_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_QuramiJsonApi_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -500,14 +565,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		129E8DE3D46D5327B91CA562EFC45365 /* Release */ = {
+		D7AE2FCA2369A95F83DE69F913615975 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F59916376C107B80C11FE65B0E2D7238 /* QuramiJsonApi.xcconfig */;
 			buildSettings = {
@@ -521,110 +586,11 @@
 				GCC_PREFIX_HEADER = "Target Support Files/QuramiJsonApi/QuramiJsonApi-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/QuramiJsonApi/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/QuramiJsonApi/QuramiJsonApi.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = QuramiJsonApi;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		2DD3DF8122F0290A33B6F8B49FCD6CE1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F59916376C107B80C11FE65B0E2D7238 /* QuramiJsonApi.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = QuramiJsonApi;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		A00959095A88B8ED4B8E8980BC0BDD8B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F59916376C107B80C11FE65B0E2D7238 /* QuramiJsonApi.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/QuramiJsonApi/QuramiJsonApi-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/QuramiJsonApi/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/QuramiJsonApi/QuramiJsonApi.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = QuramiJsonApi;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A7D021EE10BA24875222681782AFDF3E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18C60CCF35B74F2507143F66846FAB28 /* Pods-QuramiJsonApi_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-QuramiJsonApi_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-QuramiJsonApi_Tests/Pods-QuramiJsonApi_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_QuramiJsonApi_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A874B0A160CE471FFE1C640FC31B3637 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37690AF6A0CB2E932566F64E0CE346B8 /* Pods-QuramiJsonApi_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-QuramiJsonApi_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-QuramiJsonApi_Tests/Pods-QuramiJsonApi_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_QuramiJsonApi_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -645,14 +611,48 @@
 			};
 			name = Release;
 		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
-				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -669,8 +669,8 @@
 		8AA8979F1B762298E3315695CEA4B413 /* Build configuration list for PBXNativeTarget "Pods-QuramiJsonApi_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7D021EE10BA24875222681782AFDF3E /* Debug */,
-				A874B0A160CE471FFE1C640FC31B3637 /* Release */,
+				7BC610DAADF0D409F95C9EB18D67781E /* Debug */,
+				03126E33BDA5994F94CA16D5801147FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -678,8 +678,8 @@
 		BCB4D3999AC34860BDE2B4B17CCDE263 /* Build configuration list for PBXNativeTarget "QuramiJsonApi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A00959095A88B8ED4B8E8980BC0BDD8B /* Debug */,
-				129E8DE3D46D5327B91CA562EFC45365 /* Release */,
+				7168C06EA505DB6A8A6065240283B259 /* Debug */,
+				D7AE2FCA2369A95F83DE69F913615975 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

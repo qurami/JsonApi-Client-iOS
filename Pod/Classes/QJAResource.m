@@ -119,7 +119,9 @@
                             NSString *formatFunction = [propertyName substringToIndex:formatRange.location];
                             propertyName = [propertyName substringFromIndex:(formatRange.location+1)];
                             
-                            [self setValue:[QJAResourceFormatter performFormatBlock:[rawResourceObjectAttributesDictionary objectForKey:key] withName:formatFunction] forKey:propertyName ];
+                            NSString *formattedValue = [[QJAResourceFormatter sharedFormatter] performFormatBlockWithName: formatFunction onJsonValue:[rawResourceObjectAttributesDictionary objectForKey:key]];
+                            
+                            [self setValue: formattedValue forKey: propertyName ];
                         } else {
                             [self setValue:[rawResourceObjectAttributesDictionary objectForKey:key] forKey:propertyName ];
                         }

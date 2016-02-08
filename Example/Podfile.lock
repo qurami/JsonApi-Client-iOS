@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  QuramiJsonApi: 4bf9cb9ea7bd7ab86c6b02031aab8a6df70eba2e
+  QuramiJsonApi: ae3afbed7093613b0d37770837db50d734b3eefc
 
 COCOAPODS: 0.39.0

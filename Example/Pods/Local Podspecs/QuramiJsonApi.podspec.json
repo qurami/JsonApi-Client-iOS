@@ -1,19 +1,20 @@
 {
   "name": "QuramiJsonApi",
   "version": "0.1.0",
-  "summary": "A short description of QuramiJsonApi.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/QuramiJsonApi",
+  "summary": "An Obj-C json-api client implementation, for the json-api specification.",
+  "description": "This library consists of a Client and many classes to implement quickly and easily the JSONApi Specification in your iOS App.",
+  "homepage": "https://github.com/qurami/JsonApi-Client-iOS",
   "license": "MIT",
   "authors": {
     "Marco Musella": "mar.musella@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/QuramiJsonApi.git",
+    "git": "https://github.com/qurami/JsonApi-Client-iOS.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/i_mush",
   "platforms": {
-    "ios": "7.0"
+    "ios": "8.0"
   },
   "requires_arc": true,
   "source_files": "Pod/Classes/**/*",

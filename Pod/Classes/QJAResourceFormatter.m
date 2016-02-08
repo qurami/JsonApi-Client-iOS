@@ -1,10 +1,5 @@
 #import "QJAResourceFormatter.h"
 
-@interface QJAResourceFormatter()
-
-@property (nonatomic, strong) NSMutableDictionary *formatBlocks;
-
-@end
 
 @implementation QJAResourceFormatter
 
@@ -26,13 +21,14 @@
     return self;
 }
 
-+ (void)registerFormat:(NSString*)name withBlock:(id(^)(id jsonValue))block {
-    [[QJAResourceFormatter sharedFormatter].formatBlocks setObject:[block copy] forKey:name];
+- (void)registerFormatWithName:(NSString*)formatName formattingBlock:(id(^)(id jsonValue))block {
+    [self.formatBlocks setObject:[block copy] forKey: formatName ];
 }
 
-+ (id)performFormatBlock:(NSString*)value withName:(NSString*)name {
+- (id)performFormatBlockWithName: (NSString *) formatName onJsonValue: (NSString *) value {
+    
     id(^block)(NSString *);
-    block = [[QJAResourceFormatter sharedFormatter].formatBlocks objectForKey:name];
+    block = [self.formatBlocks objectForKey:formatName];
     if (block != nil) {
         return block(value);
     } else {
