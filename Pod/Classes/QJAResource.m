@@ -26,7 +26,7 @@
     NSMutableArray *mutableArray = [[NSMutableArray alloc] initWithCapacity: [array count]];
     for (NSDictionary *dict in array) {
         NSString *type = dict[@"type"] ?: @"";
-        Class resourceObjectClass = [QJAModelHelper boundSubclassForResourceOfType:type];
+        Class resourceObjectClass = [[QJAModelHelper sharedModeler] boundSubclassForResourceOfType:type];
         [mutableArray addObject:[[resourceObjectClass alloc] initWithDictionary:dict]];
     }
     
@@ -35,7 +35,7 @@
 
 + (id)jsonAPIResource:(NSDictionary*)dictionary {
     NSString *type = dictionary[@"type"] ?: @"";
-    Class resourceObjectClass = [QJAModelHelper boundSubclassForResourceOfType:type];
+    Class resourceObjectClass = [[QJAModelHelper sharedModeler] boundSubclassForResourceOfType:type];
     
     return [[resourceObjectClass alloc] initWithDictionary:dictionary];
 }

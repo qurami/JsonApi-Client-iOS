@@ -1,12 +1,6 @@
 #import "QJAModelHelper.h"
 #import "QJAResource.h"
 
-@interface QJAModelHelper ()
-
-@property (strong, nonatomic) NSMutableDictionary *bindingMap;
-
-@end
-
 @implementation QJAModelHelper
 
 + (instancetype)sharedModeler {
@@ -27,13 +21,13 @@
     return self;
 }
 
-+ (void)bindQJAResourceSubclass:(Class)jsonApiResource toResourceOfType:(NSString *)linkedType {
-    [[[QJAModelHelper sharedModeler] bindingMap] setValue:jsonApiResource forKey:linkedType];
+- (void)bindQJAResourceSubclass:(Class)resourceSubclass toResourceOfType:(NSString *)resourceType {
+    [_bindingMap setValue:resourceSubclass forKey:resourceType];
 }
 
-+ (Class)boundSubclassForResourceOfType:(NSString *)linkedType {
+- (Class)boundSubclassForResourceOfType:(NSString *)linkedType {
     
-    Class linkedTypeClass = [[[QJAModelHelper sharedModeler] bindingMap] valueForKey:linkedType];
+    Class linkedTypeClass = [_bindingMap valueForKey:linkedType];
     
     if(!linkedTypeClass)
         linkedTypeClass = [QJAResource class];
@@ -41,8 +35,8 @@
     return linkedTypeClass;
 }
 
-+ (void)resetModelBinding {
-    [[[QJAModelHelper sharedModeler] bindingMap] removeAllObjects];
+- (void)resetModelBinding {
+    [_bindingMap removeAllObjects];
 }
 
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		455C2FEB1C6503A600A360C0 /* QJAResourceFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 455C2FEA1C6503A600A360C0 /* QJAResourceFormatterTests.m */; };
+		459970BC1C6915B40071976A /* QJAModelHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 459970BB1C6915B40071976A /* QJAModelHelperTests.m */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		455C2FEA1C6503A600A360C0 /* QJAResourceFormatterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJAResourceFormatterTests.m; sourceTree = "<group>"; };
+		459970BB1C6915B40071976A /* QJAModelHelperTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJAModelHelperTests.m; sourceTree = "<group>"; };
 		4A461AC5A2D0FE1705E37A28 /* Pods_QuramiJsonApi_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuramiJsonApi_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -94,8 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				6003F5BB195388D20070C39A /* Tests.m */,
-				6003F5B6195388D20070C39A /* Supporting Files */,
 				455C2FEA1C6503A600A360C0 /* QJAResourceFormatterTests.m */,
+				459970BB1C6915B40071976A /* QJAModelHelperTests.m */,
+				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				459970BC1C6915B40071976A /* QJAModelHelperTests.m in Sources */,
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
 				455C2FEB1C6503A600A360C0 /* QJAResourceFormatterTests.m in Sources */,
 			);

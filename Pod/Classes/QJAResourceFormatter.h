@@ -6,6 +6,11 @@
  */
 @interface QJAResourceFormatter : NSObject
 
+
+/**
+ @brief the dictionary used to map format names with blocks.
+ @discussion don't address directly to this dictionary, use the designated methods instead.
+ */
 @property (nonatomic, strong) NSMutableDictionary *formatBlocks;
 
 /**
