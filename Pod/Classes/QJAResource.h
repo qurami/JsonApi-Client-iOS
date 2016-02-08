@@ -32,18 +32,18 @@
  @brief convenience constructor, initializes a QJAResource with an NSDictionary.
  @return QJAResource instance.
  */
-+ (id)jsonAPIResource:(NSDictionary*)dictionary;
++ (instancetype)resourceWithDictionary:(NSDictionary*)dictionary;
 /**
  @brief convenience constructor, initializes an Array QJAResource instances with an array of NSDictionary.
  @return NSArray of QJAResource instances.
  */
-+ (NSArray*)jsonAPIResources:(NSArray*)array;
++ (NSArray*)resourcesWithDictionaryArray:(NSArray*)array;
 /**
  @brief default constructor, initializes an instance of QJAResource with the given NSDictionary.
  @discussion in this framework, usually a JsonApi Resource is initialized from a JsonApi Document, therefore a json string initializer is not provided since this is handled in the QJADocument object. The dictionary is a Json deserialization in a NSDictionary.
  @return QJAResource instance.
  */
-- (id)initWithDictionary:(NSDictionary*)dict;
+- (instancetype)initWithDictionary:(NSDictionary*)dict;
 
 /**
  @brief returns the user specified properties map.
@@ -55,7 +55,7 @@
 /**
  fetches the the related QJAResources from a given array.
  @param array an Array of QJAResource instances
- @return NSArray subset of the input array containing only the related QJAResource instances.
+ @return NSArray subset of the input array containing only the related QJAResource instances. Nil if no related resource is present
  */
 - (NSArray *) getRelatedResourcesFromJSONAPIResourcesArray: (NSArray *) array;
 

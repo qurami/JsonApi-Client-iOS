@@ -78,9 +78,9 @@
 - (id)initializeResourceWithData:(id) data {
     
     if([data isKindOfClass:[NSDictionary class]])
-        return [QJAResource jsonAPIResource: data];
+        return [QJAResource resourceWithDictionary: data];
     else if([data isKindOfClass:[NSArray class]])
-        return [QJAResource jsonAPIResources: data];
+        return [QJAResource resourcesWithDictionaryArray: data];
     else
         return nil;
 }

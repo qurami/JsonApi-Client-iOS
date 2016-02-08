@@ -21,7 +21,7 @@
 #pragma mark -
 #pragma mark - Class Methods
 
-+ (NSArray*)jsonAPIResources:(NSArray*)array {
++ (NSArray*)resourcesWithDictionaryArray:(NSArray*)array {
     
     NSMutableArray *mutableArray = [[NSMutableArray alloc] initWithCapacity: [array count]];
     for (NSDictionary *dict in array) {
@@ -33,7 +33,7 @@
     return mutableArray;
 }
 
-+ (id)jsonAPIResource:(NSDictionary*)dictionary {
++ (instancetype)resourceWithDictionary:(NSDictionary*)dictionary {
     NSString *type = dictionary[@"type"] ?: @"";
     Class resourceObjectClass = [[QJAModelHelper sharedModeler] boundSubclassForResourceOfType:type];
     
@@ -44,7 +44,7 @@
 #pragma mark - Instance Methods
 
 
-- (id)initWithDictionary:(NSDictionary*)dict {
+- (instancetype)initWithDictionary:(NSDictionary*)dict {
     self = [super init];
     if (self) {
         [self initializeResourceWithDictionary:dict];
@@ -68,39 +68,49 @@
 
 - (void)initializeResourceWithDictionary: (NSDictionary *) rawResourceObjectDictionary {
     
-    _rawData = rawResourceObjectDictionary;
+    _rawData = [NSDictionary dictionaryWithDictionary: rawResourceObjectDictionary];
     
 
-    if(!rawResourceObjectDictionary[@"id"] || rawResourceObjectDictionary[@"id"] == [NSNull null] || [rawResourceObjectDictionary[@"id"] length] == 0){
+    if(!_rawData[@"id"] || _rawData[@"id"] == [NSNull null] || [_rawData[@"id"] length] == 0){
         NSLog(@"%@ warning: object is missing id, every jsonapiresource MUST have an id. For further reading please refer to: http://jsonapi.org/format/#document-resource-objects ", NSStringFromClass([self class]));
     }
-    else
-        self.ID = rawResourceObjectDictionary[@"id"];
+    else{
+        self.ID = _rawData[@"id"];
+    }
     
-    if(!rawResourceObjectDictionary[@"type"] ||  rawResourceObjectDictionary[@"type"] == [NSNull null] || [rawResourceObjectDictionary[@"type"] length] == 0){
+    if(!_rawData[@"type"] ||  _rawData[@"type"] == [NSNull null] || [_rawData[@"type"] length] == 0){
         NSLog(@"%@ warning: object is missing type, every jsonapiresource MUST have a type. For further reading please refer to: http://jsonapi.org/format/#document-resource-objects ", NSStringFromClass([self class]));
     }
-    else
-        self.type = rawResourceObjectDictionary[@"type"];
+    else{
+        self.type = _rawData[@"type"];
+    }
     
     
     
-    NSDictionary *rawResourceObjectAttributesDictionary = (rawResourceObjectDictionary[@"attributes"] && (rawResourceObjectDictionary[@"attributes"] != [NSNull null])) ? rawResourceObjectDictionary[@"attributes"] : nil;
+    NSDictionary *rawResourceObjectAttributesDictionary = (_rawData[@"attributes"] && (_rawData[@"attributes"] != [NSNull null])) ? _rawData[@"attributes"] : nil;
     
     if(rawResourceObjectAttributesDictionary){
         self.attributes = rawResourceObjectAttributesDictionary;
     }
-    else
+    else{
         self.attributes = @{};
+    }
     
+    if(!_rawData[@"links"] || _rawData[@"links"] == [NSNull null]){
+        self.links = @{};
+    }
+    else{
+        self.links = _rawData[@"links"];
+    }
     
+    NSDictionary *rawResourceObjectRelationshipsDictionary = (_rawData[@"relationships"] && (_rawData[@"relationships"] != [NSNull null])) ? _rawData[@"relationships"] : nil;
     
-    NSDictionary *rawResourceObjectRelationshipsDictionary = (rawResourceObjectDictionary[@"relationships"] && (rawResourceObjectDictionary[@"relationships"] != [NSNull null])) ? rawResourceObjectDictionary[@"relationships"] : nil;
     if(rawResourceObjectRelationshipsDictionary){
         self.relationships = rawResourceObjectRelationshipsDictionary;
     }
-    else
+    else{
         rawResourceObjectRelationshipsDictionary = @{};
+    }
     
     NSDictionary *userMap = [self mapAttributesToProperties];
     
@@ -170,7 +180,7 @@
         }
     }
     
-    return relationships;
+    return [relationships count] > 0 ? relationships : nil;
 
 }
 
