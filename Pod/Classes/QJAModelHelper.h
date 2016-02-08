@@ -15,6 +15,7 @@
 
 /**
  @brief returns the shared singleton instance.
+ @return QJAModelHelper instance.
  */
 + (instancetype)sharedModeler;
 
@@ -29,6 +30,7 @@
 /**
  @brief returns the bound Class for the resource type
  @param resourceType the JsonApi resource type, or QJAResource if no linked resource type is present.
+ @return Class the bound class type.
  */
 - (Class) boundSubclassForResourceOfType:(NSString*)resourceType;
 

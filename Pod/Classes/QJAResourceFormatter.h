@@ -15,6 +15,7 @@
 
 /**
  returns the shared singleton instance.
+ @return QJAResourceFormatter instance.
  */
 + (instancetype) sharedFormatter;
 
@@ -29,6 +30,7 @@
  @brief performs a formatting bock on the passed value.
  @param formatName the name of the registered format.
  @param value the value passed to the formatting block.
+ @return id formatted value.
  */
 - (id)performFormatBlockWithName: (NSString *) formatName onJsonValue: (NSString *) value;
 
