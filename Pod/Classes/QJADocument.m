@@ -57,7 +57,7 @@
 - (void)initializeDocumentWithDictionary:(NSDictionary*)dictionary {
     
     _meta = dictionary[@"meta"];
-    _jsonApi = dictionary[@"jsonApi"];
+    _jsonApi = dictionary[@"jsonapi"];
     _links = dictionary[@"links"];
     
     id rawData = dictionary[@"data"];

@@ -1,4 +1,16 @@
 {
+  "jsonapi": {
+        "version": "1.0"
+  },
+  "meta": {
+        "copyright": "Copyright 2015 Example Corp.",
+        "authors": [
+                    "Yehuda Katz",
+                    "Steve Klabnik",
+                    "Dan Gebhardt",
+                    "Tyler Kellen"
+                    ]
+  },
   "links": {
     "self": "http://example.com/articles",
     "next": "http://example.com/articles?page[offset]=2",
