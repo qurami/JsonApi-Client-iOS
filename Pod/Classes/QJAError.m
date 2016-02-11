@@ -7,7 +7,7 @@
     
     if(self = [super init]){
         
-        self.ID = errorData[@"ID"];
+        self.ID = errorData[@"id"];
         self.status = errorData[@"status"];
         self.code = errorData[@"code"];
         self.title = errorData[@"title"];
