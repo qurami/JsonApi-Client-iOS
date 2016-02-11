@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		455C2FEB1C6503A600A360C0 /* QJAResourceFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 455C2FEA1C6503A600A360C0 /* QJAResourceFormatterTests.m */; };
 		45731E231C6D1024002E7E80 /* QJAErrorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45731E221C6D1024002E7E80 /* QJAErrorTests.m */; };
+		45731E251C6D13D4002E7E80 /* QJAJsonEncoderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45731E241C6D13D4002E7E80 /* QJAJsonEncoderTests.m */; };
+		45731E281C6D17F8002E7E80 /* mockDocument.json in Resources */ = {isa = PBXBuildFile; fileRef = 45731E271C6D17F8002E7E80 /* mockDocument.json */; };
 		459970BC1C6915B40071976A /* QJAModelHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 459970BB1C6915B40071976A /* QJAModelHelperTests.m */; };
 		459970BE1C6930C70071976A /* QJAResouceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 459970BD1C6930C70071976A /* QJAResouceTests.m */; };
 		459970C11C693D9F0071976A /* MockResourceSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 459970C01C693D9F0071976A /* MockResourceSubclass.m */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		455C2FEA1C6503A600A360C0 /* QJAResourceFormatterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJAResourceFormatterTests.m; sourceTree = "<group>"; };
 		45731E221C6D1024002E7E80 /* QJAErrorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJAErrorTests.m; sourceTree = "<group>"; };
+		45731E241C6D13D4002E7E80 /* QJAJsonEncoderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJAJsonEncoderTests.m; sourceTree = "<group>"; };
+		45731E271C6D17F8002E7E80 /* mockDocument.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mockDocument.json; sourceTree = "<group>"; };
 		459970BB1C6915B40071976A /* QJAModelHelperTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJAModelHelperTests.m; sourceTree = "<group>"; };
 		459970BD1C6930C70071976A /* QJAResouceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJAResouceTests.m; sourceTree = "<group>"; };
 		459970BF1C693D9F0071976A /* MockResourceSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockResourceSubclass.h; sourceTree = "<group>"; };
@@ -68,6 +72,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		45731E261C6D1583002E7E80 /* Utilities and Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				45731E271C6D17F8002E7E80 /* mockDocument.json */,
+				459970BF1C693D9F0071976A /* MockResourceSubclass.h */,
+				459970C01C693D9F0071976A /* MockResourceSubclass.m */,
+			);
+			name = "Utilities and Mocks";
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -102,13 +116,13 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				45731E261C6D1583002E7E80 /* Utilities and Mocks */,
 				6003F5BB195388D20070C39A /* Tests.m */,
 				455C2FEA1C6503A600A360C0 /* QJAResourceFormatterTests.m */,
 				459970BB1C6915B40071976A /* QJAModelHelperTests.m */,
 				459970BD1C6930C70071976A /* QJAResouceTests.m */,
 				45731E221C6D1024002E7E80 /* QJAErrorTests.m */,
-				459970BF1C693D9F0071976A /* MockResourceSubclass.h */,
-				459970C01C693D9F0071976A /* MockResourceSubclass.m */,
+				45731E241C6D13D4002E7E80 /* QJAJsonEncoderTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -195,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45731E281C6D17F8002E7E80 /* mockDocument.json in Resources */,
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +272,7 @@
 				459970BC1C6915B40071976A /* QJAModelHelperTests.m in Sources */,
 				459970C11C693D9F0071976A /* MockResourceSubclass.m in Sources */,
 				459970BE1C6930C70071976A /* QJAResouceTests.m in Sources */,
+				45731E251C6D13D4002E7E80 /* QJAJsonEncoderTests.m in Sources */,
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
 				455C2FEB1C6503A600A360C0 /* QJAResourceFormatterTests.m in Sources */,
 				45731E231C6D1024002E7E80 /* QJAErrorTests.m in Sources */,
