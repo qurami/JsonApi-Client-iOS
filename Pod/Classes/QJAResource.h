@@ -30,11 +30,13 @@
 
 /**
  @brief convenience constructor, initializes a QJAResource with an NSDictionary.
+ @param dictionary the NSDictionary containing the raw data.
  @return QJAResource instance.
  */
 + (instancetype)resourceWithDictionary:(NSDictionary*)dictionary;
 /**
  @brief convenience constructor, initializes an Array QJAResource instances with an array of NSDictionary.
+ @param array the array containing raw representation of QJAResource object as NSDictionaries.
  @return NSArray of QJAResource instances.
  */
 + (NSArray*)resourcesWithDictionaryArray:(NSArray*)array;
