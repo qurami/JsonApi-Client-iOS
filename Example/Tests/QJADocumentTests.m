@@ -9,9 +9,8 @@
 #import <XCTest/XCTest.h>
 #import "QJADocument.h"
 #import "QJAResource.h"
+#import "QJAError.h"
 
-//TODO: Test cases when non array data
-//TODO: Test cases when errors are present
 
 @interface QJADocumentTests : XCTestCase{
 
@@ -100,6 +99,18 @@
     XCTAssertTrue(allResources);
 }
 
+- (void) testThatQJADocumentHasQJAResourceData{
+    
+    NSMutableDictionary *mockDocumentDictionaryData = [_mockDocumentDictionary mutableCopy];
+    NSDictionary *rawResource = [mockDocumentDictionaryData[@"data"] objectAtIndex:0];
+    [mockDocumentDictionaryData setObject:rawResource forKey:@"data"];
+    
+    QJADocument *sut = [[QJADocument alloc] initWithDictionary: mockDocumentDictionaryData];
+    
+    XCTAssertTrue([sut.data isKindOfClass:[QJAResource class]]);
+    XCTAssertTrue([((QJAResource *)sut.data).ID isEqualToString:@"1"]);
+}
+
 - (void) testThatQJADocumentHasInitalizedResourcesProperly{
     QJAResource *firstResource = [_sut.data objectAtIndex:0];
     QJAResource *secondResource = [_sut.data objectAtIndex:1];
@@ -113,6 +124,25 @@
 
 - (void) testThatQJADocumentReturnsNoErrorsFlagWhenNoErrors{
     XCTAssertFalse(_sut.hasErrors);
+}
+
+- (void) testThatDocumentInitializesErrorsWhenPresent{
+    
+    NSMutableDictionary *erroredMockDocument = [_mockDocumentDictionary mutableCopy];
+
+    NSDictionary *rawError = @{@"id":@"error-1234"};
+    
+    [erroredMockDocument setObject:@[rawError] forKey:@"errors"];
+    
+    QJADocument *sut = [[QJADocument alloc] initWithDictionary: erroredMockDocument];
+    
+    XCTAssertTrue(sut.hasErrors);
+    XCTAssertTrue([sut.errors count] == 1);
+    XCTAssertTrue([[sut.errors objectAtIndex:0] isKindOfClass:[QJAError class]]);
+    
+    QJAError *initializedError = sut.errors[0];
+    XCTAssertTrue([initializedError.ID isEqualToString:@"error-1234"]);
+
 }
 
 - (void) testThatQJADocumentHasCorrectJsonapiVersionObject{
@@ -152,11 +182,5 @@
     XCTAssertTrue([secondResource.ID isEqualToString:@"5"]);
     XCTAssertTrue([thirdResource.ID isEqualToString:@"12"]);
 }
-
-/*
-- (void) testThatQJADocument{
-    
-}
-*/
 
 @end
