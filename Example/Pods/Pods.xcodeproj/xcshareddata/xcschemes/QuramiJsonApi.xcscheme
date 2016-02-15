@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4CAC3AF1906A91ACA4F36924'
+               BlueprintIdentifier = '04409BE0A02A40556B5AFA8F'
                BlueprintName = 'QuramiJsonApi'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'QuramiJsonApi.framework'>

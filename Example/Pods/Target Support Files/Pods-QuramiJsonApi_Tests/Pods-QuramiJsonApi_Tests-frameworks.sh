@@ -84,8 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-QuramiJsonApi_Tests/OHHTTPStubs.framework"
   install_framework "Pods-QuramiJsonApi_Tests/QuramiJsonApi.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-QuramiJsonApi_Tests/OHHTTPStubs.framework"
   install_framework "Pods-QuramiJsonApi_Tests/QuramiJsonApi.framework"
 fi

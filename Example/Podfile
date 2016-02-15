@@ -4,6 +4,6 @@ use_frameworks!
 
 target 'QuramiJsonApi_Tests', :exclusive => true do
   pod 'QuramiJsonApi', :path => '../'
+  pod 'OHHTTPStubs'
 
-  
 end
