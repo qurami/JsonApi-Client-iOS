@@ -12,6 +12,7 @@
 		45731E251C6D13D4002E7E80 /* QJAJsonEncoderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45731E241C6D13D4002E7E80 /* QJAJsonEncoderTests.m */; };
 		45731E281C6D17F8002E7E80 /* mockDocument.json in Resources */ = {isa = PBXBuildFile; fileRef = 45731E271C6D17F8002E7E80 /* mockDocument.json */; };
 		45731E2A1C6D18B0002E7E80 /* QJADocumentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45731E291C6D18B0002E7E80 /* QJADocumentTests.m */; };
+		45731E2D1C6E4F9F002E7E80 /* TestMockHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 45731E2C1C6E4F9F002E7E80 /* TestMockHelper.m */; };
 		459970BC1C6915B40071976A /* QJAModelHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 459970BB1C6915B40071976A /* QJAModelHelperTests.m */; };
 		459970BE1C6930C70071976A /* QJAResouceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 459970BD1C6930C70071976A /* QJAResouceTests.m */; };
 		459970C11C693D9F0071976A /* MockResourceSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 459970C01C693D9F0071976A /* MockResourceSubclass.m */; };
@@ -29,6 +30,8 @@
 		45731E241C6D13D4002E7E80 /* QJAJsonEncoderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJAJsonEncoderTests.m; sourceTree = "<group>"; };
 		45731E271C6D17F8002E7E80 /* mockDocument.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mockDocument.json; sourceTree = "<group>"; };
 		45731E291C6D18B0002E7E80 /* QJADocumentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJADocumentTests.m; sourceTree = "<group>"; };
+		45731E2B1C6E4F9F002E7E80 /* TestMockHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMockHelper.h; sourceTree = "<group>"; };
+		45731E2C1C6E4F9F002E7E80 /* TestMockHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMockHelper.m; sourceTree = "<group>"; };
 		459970BB1C6915B40071976A /* QJAModelHelperTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJAModelHelperTests.m; sourceTree = "<group>"; };
 		459970BD1C6930C70071976A /* QJAResouceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJAResouceTests.m; sourceTree = "<group>"; };
 		459970BF1C693D9F0071976A /* MockResourceSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockResourceSubclass.h; sourceTree = "<group>"; };
@@ -80,6 +83,8 @@
 				45731E271C6D17F8002E7E80 /* mockDocument.json */,
 				459970BF1C693D9F0071976A /* MockResourceSubclass.h */,
 				459970C01C693D9F0071976A /* MockResourceSubclass.m */,
+				45731E2B1C6E4F9F002E7E80 /* TestMockHelper.h */,
+				45731E2C1C6E4F9F002E7E80 /* TestMockHelper.m */,
 			);
 			name = "Utilities and Mocks";
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 			files = (
 				459970BC1C6915B40071976A /* QJAModelHelperTests.m in Sources */,
 				459970C11C693D9F0071976A /* MockResourceSubclass.m in Sources */,
+				45731E2D1C6E4F9F002E7E80 /* TestMockHelper.m in Sources */,
 				459970BE1C6930C70071976A /* QJAResouceTests.m in Sources */,
 				45731E2A1C6D18B0002E7E80 /* QJADocumentTests.m in Sources */,
 				45731E251C6D13D4002E7E80 /* QJAJsonEncoderTests.m in Sources */,

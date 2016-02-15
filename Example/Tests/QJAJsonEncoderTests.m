@@ -7,33 +7,82 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "QJAJsonEncoder.h"
+#import "QJADocument.h"
+#import "QJAResource.h"
+#import "QJAError.h"
+#import "TestMockHelper.h"
 
-@interface QJAJsonEncoderTests : XCTestCase
+@interface QJAJsonEncoderTests : XCTestCase{
+
+    NSString *_mockJsonDocumentString;
+}
 
 @end
 
 @implementation QJAJsonEncoderTests
 
+
+
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    if(!_mockJsonDocumentString){
+        NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+        NSString *filePath = [bundle pathForResource:@"mockDocument" ofType:@"json"];
+        _mockJsonDocumentString = [NSString stringWithContentsOfFile: filePath encoding:NSUTF8StringEncoding error:nil];
+    }
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (NSDictionary *) jsonStringToDictionary: (NSString *) jsonString{
+
+    NSData *data = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    return [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+
+- (void) testThatEncoderEncodesDocument{
+
+    NSDictionary *rawDocument = [self jsonStringToDictionary:_mockJsonDocumentString];
+    
+    QJADocument *mockDocument = [[QJADocument alloc] initWithDictionary: rawDocument];
+    
+    NSString *encodedString = [QJAJsonEncoder jsonEncodedStringForJSONAPIDocument: mockDocument];
+    
+    NSDictionary *returnedDict = [self jsonStringToDictionary: encodedString];
+    
+    XCTAssertTrue([returnedDict isEqualToDictionary:rawDocument]);
+
 }
+
+- (void) testThatEncoderEncodesResource{
+
+    NSDictionary *rawResource = [TestMockHelper mockResourceDictionary];
+    
+    QJAResource *mockResource = [[QJAResource alloc] initWithDictionary:rawResource];
+    
+    NSString *jsonResource = [QJAJsonEncoder jsonEncodedStringForJSONAPIResource:mockResource];
+    
+    NSDictionary *returnedDictionary = [self jsonStringToDictionary: jsonResource];
+    
+    XCTAssertTrue([rawResource isEqualToDictionary: returnedDictionary]);
+}
+
+- (void) testThatEncoderEncodesError{
+    
+    NSDictionary *rawDictionary = [TestMockHelper mockErrorDictionary];
+    
+    QJAError *error = [[QJAError alloc] initWithDictionary: rawDictionary];
+    
+    NSString *jsonError = [QJAJsonEncoder jsonEncodedStringForJSONAPIError: error];
+    
+    NSDictionary *returnedDictionary = [self jsonStringToDictionary: jsonError];
+    
+    XCTAssertTrue([rawDictionary isEqualToDictionary:returnedDictionary]);
+}
+
 
 @end

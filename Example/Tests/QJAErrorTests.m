@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "QJAError.h"
+#import "TestMockHelper.h"
 
 @interface QJAErrorTests : XCTestCase{
 
@@ -18,24 +19,10 @@
 
 @implementation QJAErrorTests
 
-- (NSDictionary *) mockErrorData{
-    
-    return @{
-             @"id" : @"error-1234",
-             @"status" : @"status-1234",
-             @"code" : @"code-1234",
-             @"title" : @"mock error title",
-             @"detail" : @"mock error detail",
-             @"links" : @{@"mock-links":@"mock-value"},
-             @"source" : @{@"mock-source":@"mock-value"},
-             @"meta" : @{@"mock-meta":@"mock-value"}
-             };
-    
-}
 
 - (void)setUp {
     [super setUp];
-    _sut = [[QJAError alloc] initWithDictionary:[self mockErrorData]];
+    _sut = [[QJAError alloc] initWithDictionary:[TestMockHelper mockErrorDictionary]];
 }
 
 - (void)tearDown {
@@ -68,17 +55,17 @@
 }
 
 - (void) testThatQJAErrorHasLinksObject{
-    NSDictionary *passedLinks = [[self mockErrorData] valueForKey:@"links"];
+    NSDictionary *passedLinks = [[TestMockHelper mockErrorDictionary] valueForKey:@"links"];
     XCTAssertTrue([_sut.links isEqualToDictionary:passedLinks]);
 }
 
 - (void) testThatQJAErrorHasSourceObject{
-    NSDictionary *passedSource = [[self mockErrorData] valueForKey:@"source"];
+    NSDictionary *passedSource = [[TestMockHelper mockErrorDictionary] valueForKey:@"source"];
     XCTAssertTrue([_sut.source isEqualToDictionary:passedSource]);
 }
 
 - (void) testThatQJAErrorHasMetaObject{
-    NSDictionary *passedMeta = [[self mockErrorData] valueForKey:@"meta"];
+    NSDictionary *passedMeta = [[TestMockHelper mockErrorDictionary] valueForKey:@"meta"];
     XCTAssertTrue([_sut.meta isEqualToDictionary:passedMeta]);
 }
 

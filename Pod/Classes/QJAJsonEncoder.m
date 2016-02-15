@@ -10,19 +10,19 @@
 + (NSString *) jsonEncodedStringForJSONAPIDocument: (QJADocument *) document{
     
     NSMutableDictionary *rawDocument = [NSMutableDictionary new];
-    
+    [rawDocument setObject: [self jsonEncodableValueForObject: document.jsonApi] forKey:@"jsonapi"];
     [rawDocument setObject: [self jsonEncodableValueForObject: document.meta] forKey:@"meta"];
     [rawDocument setObject: [self jsonEncodableValueForObject: document.links] forKey:@"links"];
-    [rawDocument setObject: [self jsonEncodableValueForObject: document.jsonApi] forKey:@"jsonApi"];
     
-    id rawData = nil;
     if(document.data){
+        
+        id rawData = nil;
         
         if([document.data isKindOfClass: [QJAResource class]])
             rawData = [self dictionaryForJSONAPIResource: document.data];
         else if([document.data isKindOfClass:[NSArray class]] && [document.data count] > 0){
             
-            NSMutableArray *rawData = [[NSMutableArray alloc] initWithCapacity: [document.data count]];
+            rawData = [[NSMutableArray alloc] initWithCapacity: [document.data count]];
             
             for (QJAResource *thisResource in document.data) {
                 NSDictionary *dictionaryResource = [self dictionaryForJSONAPIResource: thisResource];
@@ -30,14 +30,18 @@
                     [rawData addObject: dictionaryResource];
             }
         }
+        
+        [rawDocument setObject:[self jsonEncodableValueForObject: rawData] forKey:@"data"];
+
     }
     
-    [rawDocument setObject:[self jsonEncodableValueForObject: rawData] forKey:@"data"];
     
     
     
-    NSMutableArray *rawIncluded = nil;
     if(document.included && [document.included count] > 0){
+        
+        NSMutableArray *rawIncluded = nil;
+        
         rawIncluded = [[NSMutableArray alloc] initWithCapacity: [document.included count]];
         
         for (QJAResource *thisIncludedResource in document.included) {
@@ -45,34 +49,49 @@
             if(resourceDictionary)
                 [rawIncluded addObject: resourceDictionary];
         }
+        
+        [rawDocument setObject: [self jsonEncodableValueForObject: rawIncluded] forKey:@"included"];
+
     }
     
-    [rawDocument setObject: [self jsonEncodableValueForObject: rawIncluded] forKey:@"included"];
     
-    NSMutableArray *rawErrors = nil;
     if(document.errors && [document.errors count] > 0){
-        
+        NSMutableArray *rawErrors = nil;
+
         rawErrors = [[NSMutableArray alloc] initWithCapacity: [document.errors count]];
         for (QJAError *thisError in document.errors) {
             NSDictionary *jsonapiErrorDictionary = [self dictionaryForJSONAPIError: thisError];
             if(jsonapiErrorDictionary)
                 [rawErrors addObject: jsonapiErrorDictionary];
         }
+        
+        [rawDocument setObject: [self jsonEncodableValueForObject: rawErrors] forKey:@"errors"];
     }
     
-    [rawDocument setObject: [self jsonEncodableValueForObject: rawErrors] forKey:@"errors"];
     
     return [self jsonParseDictionary: rawDocument];
 }
 
 + (NSDictionary *) dictionaryForJSONAPIResource: (QJAResource *) resource{
     
-    NSDictionary *rawResource = @{
-                                  @"id" : [self jsonEncodableValueForObject: resource.ID],
-                                  @"type" : [self jsonEncodableValueForObject:resource.type],
-                                  @"attributes" : [self jsonEncodableValueForObject:resource.attributes],
-                                  @"relationships" : [self jsonEncodableValueForObject:resource.relationships]
-                                  };
+    NSMutableDictionary *rawResource = [NSMutableDictionary new];
+    
+    if(resource.ID){
+        [rawResource setObject:[self jsonEncodableValueForObject:resource.ID] forKey:@"id"];
+    }
+    if(resource.type){
+        [rawResource setObject:[self jsonEncodableValueForObject:resource.type] forKey:@"type"];
+    }
+    if(resource.links){
+        [rawResource setObject:[self jsonEncodableValueForObject:resource.links] forKey:@"links"];
+    }
+    if(resource.attributes){
+        [rawResource setObject:[self jsonEncodableValueForObject:resource.attributes] forKey:@"attributes"];
+    }
+    if(resource.relationships){
+        [rawResource setObject:[self jsonEncodableValueForObject:resource.relationships] forKey:@"relationships"];
+    }
+    
     
     return rawResource;
     

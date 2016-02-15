@@ -10,6 +10,7 @@
 #import "QJAResource.h"
 #import "MockResourceSubclass.h"
 #import "QJAResourceFormatter.h"
+#import "TestMockHelper.h"
 
 @interface QJAResouceTests : XCTestCase{
 
@@ -21,57 +22,12 @@
 
 @implementation QJAResouceTests
 
-- (NSDictionary *) buildMockDictionary{
-    
-    return  @{
-              @"id" : @"mockId",
-              @"type" : @"mockType",
-              @"attributes" : @{
-                      @"mock-attr-one" : @"1234",
-                      @"mock-attr-two" : @"5678",
-                      @"mock-attr-formatted" : @"format"
-              },
-              @"links" : @{
-                      @"self" : @"http://www.google.it"
-              },
-              @"relationships" : @{
-                      @"relation-single-data" : @{
-                              @"links" : @{
-                                      @"self" : @"http://mock.com",
-                                      @"related" : @"http://mock2.com"
-                              },
-                              @"data" : @{
-                                      @"type" : @"relation1",
-                                      @"id" : @"1234-relation"
-                              }
-                       },
-                      @"relation-array-data" : @{
-                              @"links" : @{
-                                      @"self" : @"http://mock.com",
-                                      @"related" : @"http://mock2.com"
-                              },
-                              @"data" : @[
-                                      @{
-                                          @"type" : @"relation2",
-                                          @"id" : @"5678-relation"
-                                      },
-                                      @{
-                                          @"type" : @"relation3",
-                                          @"id" : @"91011-relation"
-                                      }
-                              ]
-                              
-                      }
-              }
-    };
-    
-}
 
 - (void)setUp {
     [super setUp];
     
     if(!_mockDictionary)
-        _mockDictionary = [self buildMockDictionary];
+        _mockDictionary = [TestMockHelper mockResourceDictionary];
     
     _sut = [QJAResource resourceWithDictionary:_mockDictionary];
 }
@@ -102,8 +58,8 @@
 
 - (void) testThatMultipleResourcesAreInitialized{
     
-    NSDictionary *rawResourceOne = [self buildMockDictionary];
-    NSDictionary *rawResourceTwo = [self buildMockDictionary];
+    NSDictionary *rawResourceOne = [TestMockHelper mockResourceDictionary];
+    NSDictionary *rawResourceTwo = [TestMockHelper mockResourceDictionary];
     
     NSArray *suts = [QJAResource resourcesWithDictionaryArray:@[rawResourceOne, rawResourceTwo]];
     
@@ -147,8 +103,8 @@
 
 - (void) testThatResourceFetchesRelatedResourcesFromAnArray{
     
-    QJAResource *relatedOne = [QJAResource resourceWithDictionary:[self buildMockDictionary]];
-    QJAResource *unrelatedOne = [QJAResource resourceWithDictionary:[self buildMockDictionary]];
+    QJAResource *relatedOne = [QJAResource resourceWithDictionary:[TestMockHelper mockResourceDictionary]];
+    QJAResource *unrelatedOne = [QJAResource resourceWithDictionary:[TestMockHelper mockResourceDictionary]];
     
     relatedOne.type = @"relation1";
     relatedOne.ID = @"1234-relation";
@@ -165,8 +121,8 @@
 
 - (void) testThatResourceFetchesRelatedResourcesFromAnArrayWhenRelationIsMultiple{
     
-    QJAResource *relatedOne = [QJAResource resourceWithDictionary:[self buildMockDictionary]];
-    QJAResource *unrelatedOne = [QJAResource resourceWithDictionary:[self buildMockDictionary]];
+    QJAResource *relatedOne = [QJAResource resourceWithDictionary:[TestMockHelper mockResourceDictionary]];
+    QJAResource *unrelatedOne = [QJAResource resourceWithDictionary:[TestMockHelper mockResourceDictionary]];
     
     relatedOne.type = @"relation2";
     relatedOne.ID = @"5678-relation";
@@ -183,8 +139,8 @@
 
 - (void) testThatResourceReturnsNilIfNoRelatedResourceIsPresent{
 
-    QJAResource *unrelatedOne = [QJAResource resourceWithDictionary:[self buildMockDictionary]];
-    QJAResource *unrelatedTwo = [QJAResource resourceWithDictionary:[self buildMockDictionary]];
+    QJAResource *unrelatedOne = [QJAResource resourceWithDictionary:[TestMockHelper mockResourceDictionary]];
+    QJAResource *unrelatedTwo = [QJAResource resourceWithDictionary:[TestMockHelper mockResourceDictionary]];
     
     unrelatedOne.type = @"unrelated1";
     unrelatedOne.ID = @"5678-unrelated";
@@ -200,7 +156,7 @@
 
 - (void) testThatResourceAttributesMappingIsExecuted{
     
-    MockResourceSubclass *sut = [[MockResourceSubclass alloc] initWithDictionary:[self buildMockDictionary]];
+    MockResourceSubclass *sut = [[MockResourceSubclass alloc] initWithDictionary:[TestMockHelper mockResourceDictionary]];
     
     XCTAssertTrue([sut.mockAttrOne isEqualToString:@"1234"] && [sut.mockAttrTwo isEqualToString:@"5678"]);
 
@@ -213,7 +169,7 @@
         return [NSString stringWithFormat:@"%@-applied", original];
     }];
     
-    MockResourceSubclass *sut = [[MockResourceSubclass alloc] initWithDictionary:[self buildMockDictionary]];
+    MockResourceSubclass *sut = [[MockResourceSubclass alloc] initWithDictionary:[TestMockHelper mockResourceDictionary]];
     
     XCTAssertTrue([sut.formattedAttribute isEqualToString:@"format-applied"]);
 
