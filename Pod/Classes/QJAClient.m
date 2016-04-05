@@ -283,7 +283,8 @@ NSString *const JSONAPIMediaType = @"application/vnd.api+json";
             NSString *mimeType = headers[@"Content-Type"];
             
             if(receivedStatusCode != 204 && ![self responseMimeTypeIsValid: mimeType]){
-                _completionHandler(nil,receivedStatusCode, [self mimetypeError]);
+                NSError *mimetypeError = [self mimetypeError];
+                _completionHandler(nil,mimetypeError.code, mimetypeError);
             }
             else{
                 _completionHandler(_requestReceivedData, receivedStatusCode, nil);
@@ -342,7 +343,7 @@ NSString *const JSONAPIMediaType = @"application/vnd.api+json";
                 callbackHandler(nil, statusCode, [self malformedDataError]);
             }
             else{
-                callbackHandler(jsonApiDocument, statusCode, nil);
+                callbackHandler(jsonApiDocument, statusCode, error);
             }
         }
     }
@@ -374,7 +375,6 @@ NSString *const JSONAPIMediaType = @"application/vnd.api+json";
     
     return mimeTypeError;
 
-    
 }
 
 

@@ -8,9 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class QJADocument;
+
 @interface TestMockHelper : NSObject
 
 + (NSDictionary *) mockResourceDictionary;
 + (NSDictionary *) mockErrorDictionary;
++ (NSString *) mockDocumentJsonString;
++ (QJADocument *) mockDocument;
 
 @end

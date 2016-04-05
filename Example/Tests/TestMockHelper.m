@@ -7,6 +7,7 @@
 //
 
 #import "TestMockHelper.h"
+#import "QJADocument.h"
 
 @implementation TestMockHelper
 
@@ -68,6 +69,23 @@
              @"source" : @{@"mock-source":@"mock-value"},
              @"meta" : @{@"mock-meta":@"mock-value"}
              };
+}
+
++ (NSString *) mockDocumentJsonString{
+    
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    NSString *filePath = [bundle pathForResource:@"mockDocument" ofType:@"json"];
+    NSString *jsonString = [NSString stringWithContentsOfFile: filePath encoding:NSUTF8StringEncoding error:nil];
+    
+    return jsonString;
+}
+
++ (QJADocument *) mockDocument{
+    
+    QJADocument *mockDocument = [[QJADocument alloc] initWithJSONString: [TestMockHelper mockDocumentJsonString]];
+    
+    return mockDocument;
+
 }
 
 @end

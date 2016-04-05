@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		453C6EA31CB422970054C256 /* QJAClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 453C6EA21CB422970054C256 /* QJAClientTests.m */; };
 		455C2FEB1C6503A600A360C0 /* QJAResourceFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 455C2FEA1C6503A600A360C0 /* QJAResourceFormatterTests.m */; };
 		45731E231C6D1024002E7E80 /* QJAErrorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45731E221C6D1024002E7E80 /* QJAErrorTests.m */; };
 		45731E251C6D13D4002E7E80 /* QJAJsonEncoderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45731E241C6D13D4002E7E80 /* QJAJsonEncoderTests.m */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		453C6EA21CB422970054C256 /* QJAClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJAClientTests.m; sourceTree = "<group>"; };
 		455C2FEA1C6503A600A360C0 /* QJAResourceFormatterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJAResourceFormatterTests.m; sourceTree = "<group>"; };
 		45731E221C6D1024002E7E80 /* QJAErrorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJAErrorTests.m; sourceTree = "<group>"; };
 		45731E241C6D13D4002E7E80 /* QJAJsonEncoderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJAJsonEncoderTests.m; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				45731E221C6D1024002E7E80 /* QJAErrorTests.m */,
 				45731E291C6D18B0002E7E80 /* QJADocumentTests.m */,
 				45731E241C6D13D4002E7E80 /* QJAJsonEncoderTests.m */,
+				453C6EA21CB422970054C256 /* QJAClientTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -284,6 +287,7 @@
 				45731E2A1C6D18B0002E7E80 /* QJADocumentTests.m in Sources */,
 				45731E251C6D13D4002E7E80 /* QJAJsonEncoderTests.m in Sources */,
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				453C6EA31CB422970054C256 /* QJAClientTests.m in Sources */,
 				455C2FEB1C6503A600A360C0 /* QJAResourceFormatterTests.m in Sources */,
 				45731E231C6D1024002E7E80 /* QJAErrorTests.m in Sources */,
 			);
