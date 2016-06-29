@@ -33,7 +33,7 @@ We believe that what is Open Source remains Open Source, so here's our contribut
 
 ## Author
 
-Marco Musella, marco.musella@qurami.net
+Marco Musella, marco.musella@qurami.com
 
 ## License
 
